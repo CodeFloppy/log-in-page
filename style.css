@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+li{
+    list-style: none;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background: url("./img/degraded.jpg") no-repeat;
+    background-size: 100% 100vh;
+}
+
+/* form */
+.box-form{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    width:90%;
+    max-width: 700px;
+}
+
+.box-form .logo-user{
+    text-align: center;
+}
+.box-form .logo-user .icon{
+    font-size: 15em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.box-form .form,
+.box-form .form .user,
+.box-form .form .pass,
+.box-form .form .remenber,
+.box-form .form .remenber label{
+    display: flex;
+}
+
+.box-form .form{
+    flex-flow: column wrap;
+}
+.box-form .form .user,
+.box-form .form .pass{
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.box-form .form .icon,
+.box-form .form input{
+    display: block;
+}
+
+.box-form .form .user .icon,
+.box-form .form .pass .icon{
+    font-size: 2em;
+    padding: 10px 15px;
+    color: white;
+}
+
+.box-form .form .user input,
+.box-form .form .pass input{
+    width: 100%;
+    font-size: 1.5em;
+    padding-left: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.box-form .form .user input::placeholder,
+.box-form .form .pass input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.box-form .form .remenber{
+    margin: 10px 0px 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-form .form .remenber label{
+    color: white;
+    cursor: pointer;
+}
+.box-form .form .remenber input{
+    display: none;
+}
+
+.box-form .form .remenber label{
+    font-size: 1.2em;
+    align-items:center ;
+}
+.box-form .form .remenber label span{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: block;
+    margin-right: 10px;
+}
+.box-form .form .remenber input:checked ~ label span::after{
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border: 7px solid white;
+    border-radius: 50%;
+}
+
+.box-form .form .bt-log-in{
+    font-size: 1.5em;
+    padding: 25px 0px;
+    cursor: pointer;
+    border: none;
+    background: #ffb82a;
+    color: #757575;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.3s;
+    outline: none;
+}
+.box-form .form .bt-log-in:hover{
+    background: rgb(255, 191, 62);
+}
