@@ -17,6 +17,17 @@ li{
 }
 
 .content{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+/* gradient background */
+.degraded{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     background: url("./img/degraded.jpg") no-repeat;
@@ -25,10 +36,10 @@ li{
 
 /* form */
 .box-form{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
     width:90%;
     max-width: 700px;
 }
@@ -136,4 +147,19 @@ li{
 }
 .box-form .form .bt-log-in:hover{
     background: rgb(255, 191, 62);
+}
+
+/* create account */
+.box-form .create-acc{
+    margin: 30px 0px;
+    text-align: center;
+    padding: 10px 0px;
+    border-top:1px solid white;
+}
+.box-form .create-acc a{
+    display: inline-block;
+    font-size: 1.1em;
+}
+.box-form .create-acc a:hover{
+    text-decoration-line: underline;
 }
